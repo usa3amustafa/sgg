@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "../styles/sidebar.css";
+import "../styles/Sidebar.css";
 
 import React from "react";
 
-export default function sidebar() {
+export default function Sidebar() {
   return (
     <div>
       <div className="sidebarContainer">
