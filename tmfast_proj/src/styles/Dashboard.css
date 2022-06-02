@@ -1,0 +1,10 @@
+.heading {
+  background-color: #bde0e4;
+  height: 400px;
+  padding: 25px;
+}
+.heading h1 {
+  color: #0096a9;
+  font-size: 28px;
+  margin-left: 200px;
+}

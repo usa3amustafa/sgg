@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/Sidebar.css";
+import { Outlet, Link } from "react-router-dom";
 
 import React from "react";
 
@@ -8,16 +9,15 @@ export default function Sidebar() {
     <div>
       <div className="sidebarContainer">
         <div className="selection">
-          <a class="active" href="#dashboard">
+          {/* <a class="active" href="#dashboard">
             Dashboard
-          </a>
+          </a> */}
         </div>
-
-        <a href="#dashboard">Contacts</a>
-        <a href="#dashboard">Quotations</a>
-        <a href="#dashboard">Application</a>
-        <a href="#dashboard">Form Centre</a>
-        <a href="#dashboard">Notifications</a>
+        <Link to="/Dashboard">Dashboard</Link>
+        <Link to="/Contact">Contacts</Link>
+        <Link to="/quotations">Quotations</Link>
+        <Link to="/formcentre">Form Centre</Link>
+        <Link to="/notification">Notifications</Link>
       </div>
     </div>
   );

@@ -1,3 +1,12 @@
 body {
   background-color: #e6f4f5;
 }
+
+.container {
+  display: flex;
+  min-height: 100%;
+}
+/* .content {
+  flex: 1;
+  padding-left: 220px;
+} */
