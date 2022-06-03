@@ -13,7 +13,9 @@ export default function Sidebar() {
             Dashboard
           </a> */}
         </div>
-        <Link to="/Dashboard">Dashboard</Link>
+        <Link to="/Dashboard" activestyle>
+          Dashboard
+        </Link>
         <Link to="/Contact">Contacts</Link>
         <Link to="/quotations">Quotations</Link>
         <Link to="/formcentre">Form Centre</Link>

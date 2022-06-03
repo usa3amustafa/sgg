@@ -11,14 +11,14 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <div className="header">
+        {/* <div className="header">
           <Navbar />
-        </div>
+        </div> */}
 
-        <div className="container">
+        {/* <div className="container">
           <Sidebar />
           <div className="content"></div>
-        </div>
+        </div> */}
         {/* Need to style the app */}
 
         <Routes>
