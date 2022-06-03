@@ -19,101 +19,52 @@ body {
   bottom: 0;
 }
 
-/* .Login {
-    padding: 60px 0;
-  }
-
-  .Login form {
-    margin: 0 auto;
-    max-width: 320px;
-  }
-
-  .Login .input input {
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    border: 1px solid #2d9fd9;
-    color: #a0d18c;
-    width: 250px;
-    height: 30px;
-    padding-left: 10px;
-    margin-top: 10px;
-    margin-left: 20px;
-    font-style: italic;
-  }
-
-  .Login .button input {
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    text-align: center;
-    border-radius: 20px;
-    border: 1px solid green;
-    background-color: #a0d18c;
-    color: white;
-    width: 250px;
-    height: 30px;
-    padding-left: 10px;
-    margin-top: 25px;
-    margin-left: 28px;
-  }
-
-  .Login .small {
-    margin-top: 20px;
-    text-align: center;
-    color: white;
-  }
-
-  .Login .small a {
-    color: #a0d18c;
-  }
-
-  .Login form a {
-    margin-bottom: 15px;
-    display: block;
-    font-size: 14px;
-  }
-
-  .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .input-2 {
-    position: relative;
-    left: -25px;
-  }
-e
-  .input-2 .input {
-    font-size: 20px;
-  } */
-
-.loginContainer {
-  margin-top: 50px;
-  text-align: center;
-}
-
 .container {
-  padding-top: 80px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
 
-.input-icons i {
-  position: absolute;
+/* this is for the icon positioning */
+.search-bar-2 a {
+  position: relative;
+  left: -25px;
+}
+.search-bar-2 input {
+  border-radius: 25px;
+  padding-left: 15px;
+  width: 300px;
+  height: 50px;
+  border: none;
+  color: #0096a9;
 }
 
-.input-icons {
-  width: 100%;
-  margin-bottom: 10px;
+.container-password {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
 }
 
-.icon {
-  padding: 10px;
-  min-width: 40px;
+button {
+  margin-top: 8px;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #d2d711;
+  color: #ffffff;
+  border: none;
 }
 
-.input-field {
-  width: 200px;
-  padding: 10px;
-  text-align: left;
+.link {
+  color: #ffffff;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  padding: 1rem;
+}
+
+p {
+  color: #ffffff;
 }

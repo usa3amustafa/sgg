@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Login.css";
 import Form from "react-bootstrap/Form";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -10,62 +11,54 @@ export default function Login() {
           <img className="logo" src="assets/placeholder-logo-4.png"></img>
         </div>
 
-        {/* <div className="loginContainer">
-          <form>
-            <div class="input">
-              <input type="text" placeholder="username"></input>
-              <i class="fa fa-user"></i>
-            </div>
-          </form>
-        </div> */}
-
         <div className="container">
-          <div className="input-icons">
-            <input
-              className="input-field"
-              type="text"
-              placeholder="username"
-            ></input>
-            <i class="fa fa-user icon"></i>
+          <div className="search-bar-2">
+            <input type="text" placeholder="username"></input>
+            <a href="#">
+              <i className="fa fa-user"></i>
+            </a>
+          </div>
+        </div>
+        <div className="container-password">
+          <div className="search-bar-2">
+            <input type="password" placeholder="password"></input>
+            <a href="#">
+              <i className="fa fa-lock"></i>
+            </a>
           </div>
         </div>
 
-        {/* <div className="Login">
-          <form>
-            <div className="input">
-              <input
-                type="text"
-                src="assets/user.png"
-                id="username"
-                name="username"
-                placeholder="Username"
-              />
-              <i className="fa fa-user"></i>
+        <div className="container-password">
+          <div className="button">
+            <button>Login</button>
+          </div>
+        </div>
 
-              <input
-                type="text"
-                src="assets/lock.png"
-                id="password"
-                name="password"
-                placeholder="Password"
-              />
-            </div>
+        <div className="container-password">
+          <Link
+            to="/forgetpassword"
+            style={{ color: "#ffffff", textDecoration: "none" }}
+          >
+            Forget username/password?
+          </Link>
+        </div>
 
-            <div className="button">
-              <input type="submit" value="LOGIN" />
-            </div>
-
-            <div className="small">
-              <small>
-                <a href="#">Forgot username/password?</a>
-              </small>
-              <small>
-                Don't have an account?<a href="#">Register now.</a>
-              </small>
-            </div>
-          </form>
-        </div> */}
+        <div className="container-password">
+          <Link
+            to="/forgetpassword"
+            style={{ color: "#ffffff", textDecoration: "none" }}
+          >
+            Don't have an account?Register now.
+          </Link>
+        </div>
       </div>
+      <footer>
+        <p>
+          © 2022 Tokio Marine Life Insurance Singapore Ltd. (Company Reg. No.
+          19480005D)
+        </p>
+        <p>All Rights Reserved. Terms of Use | Privacy Statement</p>
+      </footer>
     </body>
   );
 }
