@@ -33,7 +33,7 @@ export default function Login() {
             <button>Login</button>
           </div> */}
 
-          <Link to="/LoggedIn">
+          <Link to="/Dashboard">
             <button className="loginButton" type="submit">
               Login
             </button>

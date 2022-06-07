@@ -22,15 +22,13 @@ const Dropdown = props => {
           <i className="fa-solid fa-arrow-down-wide-short"></i>
         </div>
 
-        <hr className="dropdown-hr"></hr>
-        <br></br>
-
         {/* card component */}
         <div className={`cards ${isOpen && "cards-open"}`}>
           {props.dropdownItem.cards.map(c => (
             <Card cardData={c} key={c.id} />
           ))}
         </div>
+        <hr className="dropdown-hr"></hr>
       </div>
     </>
   );

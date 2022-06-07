@@ -9,19 +9,19 @@ const Card = props => {
       <p className="card-code">{props.cardData.cardNumber}</p>
 
       {props.cardData.createdAtDate && (
-        <p className="card-info">
+        <p className="card-info-2">
           {`Created ${props.cardData.createdAtDate} | ${props.cardData.createdAtTime}`}
         </p>
       )}
 
       {props.cardData.validUntilDate && (
-        <p className="card-info">
+        <p className="card-info-2">
           {`Valid Until ${props.cardData.validUntilDate} | ${props.cardData.validUntilTime}`}
         </p>
       )}
 
       {props.cardData.submittedAtDate && (
-        <p className="card-info">
+        <p className="card-info-2">
           {`Submitted At ${props.cardData.submittedAtDate} | ${props.cardData.submittedAtTime}`}
         </p>
       )}
@@ -32,7 +32,7 @@ const Card = props => {
           <i className="fa-solid fa-eye"></i> view
         </button>
         <button className="card-btn ">
-          <i className="fa-solid fa-trash-can"></i> delete
+          <i className="fa-solid fa-trash-can"></i> {props.cardData.operation}
         </button>
       </div>
     </div>

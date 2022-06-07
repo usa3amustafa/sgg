@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Topbar = () => {
+  const [dropdown, setDropdown] = useState(false);
+
   return (
     <nav>
       <div className="nav">
@@ -27,8 +29,19 @@ const Topbar = () => {
           />
 
           <div className="profile-name">
-            <p className="profile-name-text">John Smith</p>
+            <p
+              className="profile-name-text"
+              onClick={() => setDropdown(!dropdown)}
+            >
+              John Smith
+            </p>
             <i className="fa-solid fa-sort-down"></i>
+
+            <div className={`dropdown-menu ${dropdown && `show-dropdown`}`}>
+              <p className="dropdown-link">Logout</p>
+              <p className="dropdown-link">Dropdown link</p>
+              <p className="dropdown-link">Dropdown link</p>
+            </div>
           </div>
         </div>
       </div>

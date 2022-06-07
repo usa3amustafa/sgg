@@ -3,6 +3,7 @@ import Topbar from "./components/Topbar";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/dashboard/Dashboard";
 import "./index.css";
+import ContactForm from "./components/Form";
 
 const App = () => {
   return (
@@ -12,8 +13,11 @@ const App = () => {
       <main>
         <div className="main">
           <Sidebar />
+
+          {/* Right Content  */}
           <div className="dashboard">
-            <Dashboard />
+            {/* <Dashboard />
+            <ContactForm /> */}
           </div>
         </div>
       </main>
@@ -22,3 +26,5 @@ const App = () => {
 };
 
 export default App;
+
+// To be deleted - Ignore.
