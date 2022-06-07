@@ -1,5 +1,6 @@
-body {
+.loginbody {
   background-color: #0096a9;
+  height: 100vh;
 }
 
 .white {
@@ -45,7 +46,7 @@ body {
   margin-top: 16px;
 }
 
-button {
+.loginButton {
   margin-top: 8px;
   width: 150px;
   height: 50px;
@@ -59,7 +60,7 @@ button {
   color: #ffffff;
 }
 
-footer {
+.bottomFooter {
   position: fixed;
   bottom: 20px;
   margin-bottom: 20px;
@@ -67,7 +68,7 @@ footer {
   height: 60px; /* Height of the footer */
 }
 
-p {
+.footerText {
   color: #ffffff;
   font-size: 14px;
   padding-left: 0.5rem;

@@ -1,28 +1,23 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Link, Route, Routes, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Login from "./components/Login";
 import Contact from "./components/Contact";
-import Dashboard from "./components/Dashboard";
+import LoggedIn from "./LoggedIn";
+
+import Topbar from "./components/Topbar";
+// import Sidebar from "./components/Sidebar";
+import Dashboard from "./components/dashboard/Dashboard";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {/* <div className="header">
-          <Navbar />
-        </div> */}
-
-        {/* <div className="container">
-          <Sidebar />
-          <div className="content"></div>
-        </div> */}
-        {/* Need to style the app */}
-
         <Routes>
+          {/* Block the Login file temporary, kindly do the user access control */}
           <Route path="/" element={<Login />} />
+          <Route path="/LoggedIn" element={<LoggedIn />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Dashboard" element={<Dashboard />} />
         </Routes>

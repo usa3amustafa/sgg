@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
-    <body>
+    <div className="loginbody">
       <div className="content">
         <div className="white">
           <img className="logo" src="assets/placeholder-logo-4.png"></img>
@@ -29,9 +29,15 @@ export default function Login() {
         </div>
 
         <div className="container-password">
-          <div className="button">
+          {/* <div className="button">
             <button>Login</button>
-          </div>
+          </div> */}
+
+          <Link to="/LoggedIn">
+            <button className="loginButton" type="submit">
+              Login
+            </button>
+          </Link>
         </div>
 
         <div className="container-password">
@@ -52,13 +58,15 @@ export default function Login() {
           </Link>
         </div>
       </div>
-      <footer>
-        <p>
+      <footer className="bottomFo">
+        <p className="footerText">
           © 2022 Tokio Marine Life Insurance Singapore Ltd. (Company Reg. No.
           19480005D)
         </p>
-        <p>All Rights Reserved. Terms of Use | Privacy Statement</p>
+        <p className="footerText">
+          All Rights Reserved. Terms of Use | Privacy Statement
+        </p>
       </footer>
-    </body>
+    </div>
   );
 }

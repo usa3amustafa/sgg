@@ -1,26 +1,19 @@
-import { useState } from "react";
-import "../styles/Sidebar.css";
-import { Outlet, Link } from "react-router-dom";
-
 import React from "react";
+import sidebarData from "./sidebarData";
 
-export default function Sidebar() {
+const Sidebar = () => {
   return (
-    <div>
-      <div className="sidebarContainer">
-        <div className="selection">
-          {/* <a class="active" href="#dashboard">
-            Dashboard
-          </a> */}
+    <div className="side-bar">
+      {sidebarData.map(s => (
+        <div className="side-bar-item" key={s.id}>
+          <div className="side-bar-icon">
+            <i className={`${s.icon}`}></i>
+          </div>
+          <p className="side-bar-text">{s.text}</p>
         </div>
-        <Link to="/Dashboard" activestyle>
-          Dashboard
-        </Link>
-        <Link to="/Contact">Contacts</Link>
-        <Link to="/quotations">Quotations</Link>
-        <Link to="/formcentre">Form Centre</Link>
-        <Link to="/notification">Notifications</Link>
-      </div>
+      ))}
     </div>
   );
-}
+};
+
+export default Sidebar;
