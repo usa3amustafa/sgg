@@ -21,13 +21,19 @@ const Topbar = () => {
           <div className="bell-icon">
             <i className="fa-solid fa-bell"></i>
           </div>
-
-          <img
-            className="profile-img"
-            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            onClick={() => setDropdown(!dropdown)}
-          />
+          <div className="img-dropdown">
+            <img
+              className="profile-img"
+              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+              onClick={() => setDropdown(!dropdown)}
+            />
+            <div className={`dropdown-menu ${dropdown && `show-dropdown`}`}>
+              <p className="dropdown-link">Logout</p>
+              <p className="dropdown-link">Dropdown link</p>
+              <p className="dropdown-link">Dropdown link</p>
+            </div>
+          </div>
 
           <div className="profile-name">
             <p
@@ -37,12 +43,6 @@ const Topbar = () => {
               John Smith
             </p>
             <i className="fa-solid fa-sort-down"></i>
-
-            <div className={`dropdown-menu ${dropdown && `show-dropdown`}`}>
-              <p className="dropdown-link">Logout</p>
-              <p className="dropdown-link">Dropdown link</p>
-              <p className="dropdown-link">Dropdown link</p>
-            </div>
           </div>
         </div>
       </div>

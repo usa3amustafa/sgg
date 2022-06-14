@@ -5,10 +5,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div className="side-bar">
-      <Link
-        to="/Dashboard"
-        style={{ color: "#0096a9", textDecoration: "none" }}
-      >
+      <Link to="/Dashboard" style={{ color: "#fff", textDecoration: "none" }}>
         <span className="side-bar-item side-bar-active">
           <div className="side-bar-icon">
             <i className="fa-solid fa-chart-line"></i>
@@ -16,7 +13,7 @@ const Sidebar = () => {
           <p className="side-bar-text">dashboard</p>
         </span>
       </Link>
-      <Link to="/ContactForm">
+      <Link to="/ContactForm" style={{ textDecoration: "none", color: "#fff" }}>
         <span className="side-bar-item">
           <div className="side-bar-icon">
             <i className="fa-solid fa-address-book"></i>

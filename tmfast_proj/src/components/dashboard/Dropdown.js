@@ -12,7 +12,8 @@ const Dropdown = props => {
         <div className="dropdown-topbar">
           <h2 className="dropdown-title">
             <i
-              className="fa-solid fa-chevron-up dropdown-btn"
+              className={`fa-solid fa-chevron-up dropdown-btn ${isOpen &&
+                "rotate"}`}
               onClick={() => handleOpen(isOpen)}
             ></i>
             {props.dropdownItem.dropdownTitle} (

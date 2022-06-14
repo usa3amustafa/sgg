@@ -34,7 +34,11 @@ const Form = () => {
                   className="form-title"
                   onClick={() => handlePersonalInfo(isPersonalInfoOpen)}
                 >
-                  <i className="fa-solid fa-chevron-down"></i> Personal Info
+                  <i
+                    className={`fa-solid fa-chevron-up dropdown-btn ${isPersonalInfoOpen &&
+                      "rotate"}`}
+                  ></i>{" "}
+                  Personal Info
                 </h2>
                 <div
                   className={`form-content ${
@@ -126,7 +130,11 @@ const Form = () => {
                   className="form-title"
                   onClick={() => handleContactDetails(isContactDetailsOpen)}
                 >
-                  <i className="fa-solid fa-chevron-down"></i> Contact Details
+                  <i
+                    className={`fa-solid fa-chevron-up dropdown-btn ${isContactDetailsOpen &&
+                      "rotate"}`}
+                  ></i>{" "}
+                  Contact Details
                 </h2>
                 <div
                   className={`form-content ${
@@ -182,8 +190,11 @@ const Form = () => {
                   className="form-title"
                   onClick={() => handleNatDet(isNatDetailsOpen)}
                 >
-                  <i className="fa-solid fa-chevron-down"></i> Nationality
-                  Details
+                  <i
+                    className={`fa-solid fa-chevron-up dropdown-btn ${isNatDetailsOpen &&
+                      "rotate"}`}
+                  ></i>{" "}
+                  Nationality Details
                 </h2>
                 <div
                   className={`form-content ${
@@ -241,8 +252,11 @@ const Form = () => {
                   className="form-title"
                   onClick={() => handleEmpDet(isEmpDetOpen)}
                 >
-                  <i className="fa-solid fa-chevron-down"></i> Employment
-                  Details
+                  <i
+                    className={`fa-solid fa-chevron-up dropdown-btn ${isEmpDetOpen &&
+                      "rotate"}`}
+                  ></i>{" "}
+                  Employment Details
                 </h2>
                 <div
                   className={`form-content ${isEmpDetOpen ? "show" : "hidden"}`}
@@ -298,8 +312,11 @@ const Form = () => {
                   className="form-title"
                   onClick={() => handleResDet(isResAddOpen)}
                 >
-                  <i className="fa-solid fa-chevron-down"></i> Residential
-                  address
+                  <i
+                    className={`fa-solid fa-chevron-up dropdown-btn ${isResAddOpen &&
+                      "rotate"}`}
+                  ></i>{" "}
+                  Residential address
                 </h2>
                 <div
                   className={`form-content ${isResAddOpen ? "show" : "hidden"}`}
@@ -363,7 +380,10 @@ const Form = () => {
             <div className="form-el submit">
               <button className="btn submit-btn">Submit</button>
             </div>
-            <footer>Footer</footer>
+            <footer className="dashboard-footer">
+              © 2022 Tokio Marine Life Insurance Singapore Ltd. (Company Reg.
+              No. 19480005D)
+            </footer>
           </div>
         </div>
       </main>
