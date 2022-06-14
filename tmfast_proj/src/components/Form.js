@@ -363,6 +363,7 @@ const Form = () => {
             <div className="form-el submit">
               <button className="btn submit-btn">Submit</button>
             </div>
+            <footer>Footer</footer>
           </div>
         </div>
       </main>

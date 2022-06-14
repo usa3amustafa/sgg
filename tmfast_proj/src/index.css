@@ -32,6 +32,8 @@ body {
 nav {
   background-color: var(--grey-1);
   color: var(--pri-clr);
+  /* position: fixed;
+  width: 100%; */
 }
 .nav {
   display: flex;
@@ -126,8 +128,9 @@ nav {
 
 /* main */
 .main {
+  /* margin-top: 30px; */
   display: grid;
-  grid-template-columns: 12vw 86.25vw;
+  grid-template-columns: 180px 1fr;
 }
 
 /* sidebar */
@@ -162,7 +165,7 @@ nav {
 
 .side-bar-active {
   color: var(--pri-clr);
-  background-color: var(--pri-clr-light);
+  background-color: var(--pri-clr-lightest);
 }
 
 /* dashboard */
@@ -178,6 +181,11 @@ nav {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   border-top: 2px solid var(--pri-clr-light);
+}
+
+/* footer */
+.dashboard-footer {
+  padding: 1rem 1.5rem;
 }
 
 /* carousel */
@@ -481,7 +489,7 @@ select {
 }
 
 .submit-btn {
-  background-color: var(--accent-clr);
+  background-color: var(--pri-clr);
   color: var(--grey-1);
   padding: 0.75rem 2rem;
   border-radius: 5rem;
@@ -599,10 +607,8 @@ select {
   left: -30px;
   background-color: var(--pri-clr-light);
   width: 150px;
-
   height: 0px;
   overflow: hidden;
-
   transition: height 0.3s ease-in-out;
 }
 

@@ -9,6 +9,7 @@ const Dashboard = () => {
   return (
     <>
       <Topbar />
+
       <main>
         <div className="main">
           <Sidebar />
@@ -19,6 +20,10 @@ const Dashboard = () => {
             {dData.map(item => {
               return <Dropdown key={item.id} dropdownItem={item} />;
             })}
+            <footer className="dashboard-footer">
+              © 2022 Tokio Marine Life Insurance Singapore Ltd. (Company Reg.
+              No. 19480005D)
+            </footer>
           </div>
         </div>
       </main>
