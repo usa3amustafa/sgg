@@ -1,10 +1,11 @@
-import React, { Component, useState } from "react";
-import Sidebar from "./Sidebar";
-import Topbar from "./Topbar";
-import Modal from "./Modal";
+import React, { Component, useState } from 'react'
+import Sidebar from './Sidebar'
+import Topbar from './Topbar'
+import Modal from './Modal'
+import BackToTop from './BackToTop'
 
 function NewQuotation() {
-  const [openModal, setOpenModal] = useState(false);
+  const [openModal, setOpenModal] = useState(false)
 
   return (
     <>
@@ -12,26 +13,26 @@ function NewQuotation() {
       <Topbar />
 
       <main>
-        <div className="main">
+        <div className='main'>
           <Sidebar />
-          <div className="form">
-            <div className="form-title">New Quotation</div>
-            <div className="content-container">Steps</div>
-            <div className="content-container2">
-              <div className="form-title">Add Profile</div>
-              <p className="text">Select an option to add profile</p>
-              <div className="popupbtn-container">
+          <div className='form'>
+            <div className='form-title'>New Quotation</div>
+            <div className='content-container'>Steps</div>
+            <div className='content-container2'>
+              <div className='form-title'>Add Profile</div>
+              <p className='text'>Select an option to add profile</p>
+              <div className='popupbtn-container'>
                 <button
-                  className="btn-addprofile"
+                  className='btn-addprofile'
                   onClick={() => {
-                    setOpenModal(true);
+                    setOpenModal(true)
                   }}
                 >
-                  <i class="fa-regular fa-address-book"></i>
+                  <i class='fa-regular fa-address-book'></i>
                   From Existing Contact
                 </button>
-                <button className="btn-addprofile">
-                  <i class="fa-solid fa-user-plus"></i>
+                <button className='btn-addprofile'>
+                  <i class='fa-solid fa-user-plus'></i>
                   Create new Contact
                 </button>
               </div>
@@ -40,8 +41,10 @@ function NewQuotation() {
           </div>
         </div>
       </main>
+
+      <BackToTop />
     </>
-  );
+  )
 }
 
-export default NewQuotation;
+export default NewQuotation
