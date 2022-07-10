@@ -13,7 +13,10 @@ const Sidebar = () => {
           <p className="side-bar-text">dashboard</p>
         </span>
       </Link>
-      <Link to="/ContactForm" style={{ textDecoration: "none", color: "#fff" }}>
+      <Link
+        to="/ExistingContact"
+        style={{ textDecoration: "none", color: "#fff" }}
+      >
         <span className="side-bar-item">
           <div className="side-bar-icon">
             <i className="fa-solid fa-address-book"></i>
@@ -22,30 +25,41 @@ const Sidebar = () => {
         </span>
       </Link>
 
-      <div className="side-bar-item">
-        <div className="side-bar-icon">
-          <i className="fa-solid fa-file-invoice"></i>
-        </div>
-        <p className="side-bar-text">Quotations</p>
-      </div>
-      <div className="side-bar-item">
+      <Link
+        to="/ExistingQuotation"
+        style={{ textDecoration: "none", color: "#fff" }}
+      >
+        <span className="side-bar-item">
+          <div className="side-bar-icon">
+            <i className="fa-solid fa-file-invoice"></i>
+          </div>
+          <p className="side-bar-text">Quotations</p>
+        </span>
+      </Link>
+
+      {/* <div className="side-bar-item">
         <div className="side-bar-icon">
           <i className="fa-solid fa-file"></i>
         </div>
         <p className="side-bar-text">Applications</p>
-      </div>
+      </div> */}
       <div className="side-bar-item">
         <div className="side-bar-icon">
           <i class="fa-solid fa-folder-open"></i>
         </div>
         <p className="side-bar-text">Form Centre</p>
       </div>
-      <div className="side-bar-item">
-        <div className="side-bar-icon">
-          <i className="fa-solid fa-bell"></i>
-        </div>
-        <p className="side-bar-text">Notifications</p>
-      </div>
+      {/* <Link
+        to="/ExistingContact"
+        style={{ textDecoration: "none", color: "#fff" }}
+      >
+        <span className="side-bar-item">
+          <div className="side-bar-icon">
+            <i className="fa-solid fa-bell"></i>
+          </div>
+          <p className="side-bar-text">Notification </p>
+        </span>
+      </Link> */}
     </div>
   );
 };

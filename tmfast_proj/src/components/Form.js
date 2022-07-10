@@ -46,16 +46,13 @@ const Form = () => {
                   }`}
                 >
                   <p className="form-element">
-                    <label htmlFor="surname">Surname *</label>
-                    <input type="text" id="surname" />
-                  </p>
-                  <p className="form-element">
-                    <label htmlFor="anb">ANB *</label>
-                    <input type="text" id="anb" />
-                  </p>
-                  <p className="form-element">
-                    <label htmlFor="givenName">Given Name *</label>
-                    <input type="text" id="givenName" />
+                    <label htmlFor="salutation">Salutation *</label>
+                    <br />
+                    <select name="salutation" id="salutation">
+                      <option value="mr">Mr.</option>
+                      <option value="mr">Miss.</option>
+                      <option value="mr">Mrs.</option>
+                    </select>
                   </p>
                   <p className="form-element radio-element">
                     <label htmlFor="">Gender *</label>
@@ -81,14 +78,14 @@ const Form = () => {
                       </label>
                     </span>
                   </p>
+
                   <p className="form-element">
-                    <label htmlFor="salutation">Salutation *</label>
-                    <br />
-                    <select name="salutation" id="salutation">
-                      <option value="mr">Mr.</option>
-                      <option value="mr">Miss.</option>
-                      <option value="mr">Mrs.</option>
-                    </select>
+                    <label htmlFor="surname">Surname *</label>
+                    <input type="text" id="surname" />
+                  </p>
+                  <p className="form-element">
+                    <label htmlFor="givenName">Given Name *</label>
+                    <input type="text" id="givenName" />
                   </p>
                   <p className="form-element radio-element">
                     <label htmlFor="">Smoker *</label>
@@ -101,7 +98,7 @@ const Form = () => {
                         className="radio-input"
                       />
                       <label htmlFor="yes" className="radio-label">
-                        yes
+                        Yes
                       </label>
                       <input
                         type="radio"
@@ -110,13 +107,25 @@ const Form = () => {
                         className="radio-input"
                       />
                       <label htmlFor="no" className="radio-label">
-                        no
+                        No
                       </label>
                     </span>
                   </p>
+
+                  {/* Need Help !!!  */}
+                  {/* Create a divclass use flexbox */}
                   <p className="form-element">
-                    <label htmlFor="dob">Date of birth *</label>
-                    <input type="date" id="dob" />
+                    <div className="dobanb"></div>
+                    <span className="phone-number">
+                      <label htmlFor="dob">Date of birth *</label>
+                      <label htmlFor="and">ANB *</label>
+                    </span>
+
+                    <span className="phone-number">
+                      <input type="date" id="dob" />
+
+                      <input type="number" name="" id="" />
+                    </span>
                   </p>
                 </div>
               </form>

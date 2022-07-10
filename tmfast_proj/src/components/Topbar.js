@@ -6,7 +6,9 @@ const Topbar = () => {
   return (
     <nav>
       <div className="nav">
-        <h2 className="logo">Logo</h2>
+        {/* <h2 className="logo">LOGO</h2> */}
+        <img className="logo" src="./assets/Logo-70x230.jpg"></img>
+        <img className="small-logo" src="./assets/Logo-70X70.jpg"></img>
         <div className="nav-items">
           <div className="search-box">
             <input
@@ -21,7 +23,7 @@ const Topbar = () => {
           <div className="bell-icon">
             <i className="fa-solid fa-bell"></i>
           </div>
-          <div className="img-dropdown">
+          {/* <div className="img-dropdown">
             <img
               className="profile-img"
               src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -33,16 +35,21 @@ const Topbar = () => {
               <p className="dropdown-link">Dropdown link</p>
               <p className="dropdown-link">Dropdown link</p>
             </div>
-          </div>
+          </div> */}
 
           <div className="profile-name">
             <p
               className="profile-name-text"
-              // onClick={() => setDropdown(!dropdown)}
+              onClick={() => setDropdown(!dropdown)}
             >
               John Smith
             </p>
             <i className="fa-solid fa-sort-down"></i>
+            <div className={`dropdown-menu ${dropdown && `show-dropdown`}`}>
+              <p className="dropdown-link">Logout</p>
+              <p className="dropdown-link">Dropdown link</p>
+              <p className="dropdown-link">Dropdown link</p>
+            </div>
           </div>
         </div>
       </div>

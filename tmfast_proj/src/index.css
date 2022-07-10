@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+/* @font-face {
+  font-family: "newjuneregularregular";
+  src: url("http://localhost:3000/fonts/newjune-regular-webfont.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
 :root {
   --pri-clr: #0096a9;
   --pri-clr-light: #bfe3e7;
@@ -14,6 +20,7 @@
   --grey-4: #e6e7e8;
 
   --font-family: "Poppins", sans-serif;
+  /* --font-family: "newjuneregularregular"; */
 }
 
 * {
@@ -24,6 +31,7 @@
 
 body {
   font-family: var(--font-family);
+  /* font-family: "newjuneregularregular"; */
 }
 
 /* utilities */
@@ -37,6 +45,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 1000;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
 }
 .nav {
   display: flex;
@@ -44,7 +53,16 @@ nav {
   align-items: center;
   gap: 1rem;
   padding: 1rem 2rem;
+  height: 75px;
 }
+
+.logo {
+  height: 55px;
+}
+
+/* .small-logo {
+  display: none;
+} */
 
 .nav-items {
   display: flex;
@@ -64,7 +82,6 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
-
   padding: 0.5rem 1rem;
   background-color: var(--pri-clr);
   border-bottom-right-radius: 5rem;
@@ -111,9 +128,9 @@ nav {
   right: 20%;
 }
 
-.profile-img {
+/* .profile-img {
   margin: 0 1rem;
-}
+} */
 
 .profile-img {
   height: 3rem;
@@ -123,6 +140,7 @@ nav {
 }
 
 .profile-name {
+  margin: 0 1rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -169,6 +187,10 @@ nav {
 .side-bar-active {
   color: var(--pri-clr);
   background-color: var(--pri-clr-lightest);
+  /* border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  margin-top: 1rem;
+  margin-left: 1rem; */
 }
 
 /* dashboard */
@@ -522,6 +544,148 @@ select {
   height: auto;
 }
 
+/* Existing Contact */
+.top-row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  align-items: flex-start;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
+  height: 0px;
+  overflow: hidden;
+}
+
+/* Existing Quotation */
+/* this is for the icon positioning */
+.searchbar2 a {
+  position: relative;
+  left: -25px;
+}
+.searchbar2 input {
+  border-radius: 25px;
+  padding-left: 15px;
+  width: 500px;
+  height: 50px;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+}
+
+.Exisiting-quotation-card {
+  margin-top: 1rem;
+}
+
+.quotation-card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  align-items: stretch;
+}
+
+.quotation-card {
+  border: 1px solid;
+  color: #ddd;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.quotation-card-name {
+  color: var(--pri-clr);
+  font-weight: 700;
+}
+
+.quotation-card-typename {
+  color: #000;
+  font-weight: 700;
+}
+
+.quotation-card-typecontent {
+  color: #000;
+}
+
+/* new quotation */
+.content-container {
+  background-color: var(--grey-1);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.content-container2 {
+  background-color: var(--grey-1);
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+.content-container2 p {
+  text-align: center;
+}
+.popupbtn-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.btn-addprofile {
+  background-color: var(--grey-1);
+  border: solid 1px;
+  border-color: var(--pri-clr);
+  border-radius: 2rem;
+  padding: 12px 16px;
+  height: 50px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  margin-left: 0.5rem;
+  color: var(--pri-clr);
+  font-weight: 700;
+}
+
+.btn-addprofile .fa-address-book {
+  color: var(--accent-clr);
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.btn-addprofile .fa-user-plus {
+  color: var(--accent-clr);
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* .new-quotation-card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  align-items: stretch;
+}
+.new-quotation-card-name {
+  text-align: left;
+} */
+
+/* Modal */
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalContainer {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
 @media (max-width: 900px) {
   .dashboard {
     display: grid;
@@ -536,11 +700,11 @@ select {
     min-width: 95%;
   } /* navbar */
 
-  .profile-name {
+  /* .profile-name {
     display: none;
-  }
+  } */
 
-  .profile-img,
+  .profile-name,
   .bell-icon {
     width: 2rem;
     height: 2rem;
@@ -598,14 +762,28 @@ select {
     grid-template-columns: 1fr;
   }
   .dashboard-footer {
-    max-width: 30ch;
+    /* max-width: 30ch; */
     margin: 0 auto;
-    padding-bottom: 2rem;
-    text-align: center;
+    padding-bottom: 3rem;
+    /* text-align: center; */
   }
+
+  .quotation-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* .new-quotation-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  } */
 }
 
 @media (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+  .small-logo {
+    height: 55px;
+  }
   .search-input {
     width: 12rem;
     font-size: 0.75rem;
@@ -614,17 +792,51 @@ select {
   .search-icon {
     padding: 0.25rem 0.75rem;
   }
+
+  .btn-addprofile {
+    background-color: var(--grey-1);
+    border: solid 1px;
+    border-color: var(--pri-clr);
+    border-radius: 2rem;
+    padding: 12px 16px;
+    width: 100px;
+    height: 150px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--pri-clr);
+    font-weight: 700;
+  }
+
+  .btn-addprofile .fa-address-book {
+    margin-left: 5px;
+  }
+
+  .btn-addprofile .fa-user-plus {
+    margin-left: 5px;
+  }
+
+  .quotation-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* .new-quotation-card-container {
+    grid-template-columns: 1fr;
+  } */
 }
 
-.img-dropdown {
+.profile-name {
   position: relative;
+  /* text-align: center; */
+}
+.profile-name-text {
+  text-align: center;
 }
 
 .dropdown-menu {
   position: absolute;
   z-index: 20;
   top: 50px;
-  left: -60px;
+  left: -30px;
   background-color: var(--pri-clr-light);
   width: 150px;
   height: 0px;
@@ -651,4 +863,19 @@ select {
 
 .dropdown-link:last-child {
   border: none;
+}
+
+@media (min-width: 901px) {
+  .side-bar-active {
+    color: var(--pri-clr);
+    background-color: var(--pri-clr-lightest);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .small-logo {
+    display: none;
+  }
 }
