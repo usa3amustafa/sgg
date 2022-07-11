@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+@font-face {
+  font-family: NewJune;
+  src: url('../public/fonts/NewJune-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: NewJune;
+  font-weight: bold;
+  src: url('../public/fonts/NewJune-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: NewJune;
+  font-weight: medium;
+  src: url('../public/fonts/NewJune-Medium.otf') format('opentype');
+}
+
 :root {
   --pri-clr: #0096a9;
   --pri-clr-light: #bfe3e7;
@@ -13,7 +28,7 @@
   --grey-3: #d0d6db;
   --grey-4: #e6e7e8;
 
-  --font-family: 'Poppins', sans-serif;
+  --font-family: 'NewJune';
 }
 
 * {
